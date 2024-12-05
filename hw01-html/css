@@ -20,8 +20,38 @@
     font-style: normal;
 }
 
-
-body {
-	font-family: 'yg-jalnan';
+@font-face {
+    font-family: 'KyoboHand';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
+@font-face {
+    font-family: 'Yeongdo-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.2/Yeongdo-Rg.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SangSangRock';
+    src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/SangSangRockOTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+	font-family: 'KyoboHand';
+}
+
+h2 {
+    font-family:'Yeongdo-Rg';
+    color:blue;
+}
+
+h3 {
+    font-family: 'SangSangRock';
+    color:rgb(92, 0, 179);
+}
