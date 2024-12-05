@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html>
 
+<!-- CSS 적용 우선순위 
+    <종류별 적용 우선 순위>
+    0. important -> 가급적 쓰지 맙시다. 
+    1. inline-css 
+    2. page-css
+    3. external-css
+    4. browser default
+
+    <나중에 정의된 css가 이전에 정의된 css를 덮어쓴다>
+
+    <근데 !important 붙여주면, 우선순위 다 무시하고 !important 색으로 지정됨
+     하지만 가급적 쓰지 맙시다. 꼬일 수 있음, 마지막 마지막 마지막에 쓰는 치트키인걸로 생각>
+-->
 <head>
     <title>What does Cascading means?</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../css/css01-external.css">
+    <!-- Page CSS -->
+    <style>
+        h1 {
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
+    <h1 style="color: aqua;">Hello, CSS!</h1>
+    <p>This paragraph is styled with external CSS.</p>
+
+
+
+
+
+
+
+    <!--
     <h1>Hello, External CSS!</h1>
     <p>This paragraph is styled with external CSS.</p>
+    -->
 </body>
 
 </html>

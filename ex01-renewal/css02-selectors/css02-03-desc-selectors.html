@@ -3,6 +3,26 @@
 
 <head>
     <title>CSS 자식 선택자와 후손 선택자 실습</title>
+
+<style>
+    div,p {
+        border: 1px dotted red;
+        margin: 5px;
+    }
+
+    /*자식 선택자 : 후손 중에서 직계 자손, 바로 아래 위치한 요소들. >로 구분 */
+    .parent > p {
+        color: red;
+    }
+
+    /* 후손 선택자 : 하위에 있는 요소들. 공백으로 구분  */
+    .parent p {
+        font-size: 20px;
+    }
+
+
+</style>
+
 </head>
 
 <body>
@@ -11,9 +31,23 @@
     <div class="parent">
         <p>이것은 자식 문단입니다.</p>
         <div class="child">
+            <p>이것은 후손 문단입니다.</p>          <!-- 후손은 맞는데 자식은 아님(바로 아래에 있는 요소들이 아니잖아) */ -->
+        </div>
+    </div>
+
+
+
+
+    <!--
+    <h1>CSS 자식 선택자와 후손 선택자 실습</h1>
+
+    <div class="parent">
+        <p>이것은 자식 문단입니다.</p>
+        <div class="child">
             <p>이것은 후손 문단입니다.</p>
         </div>
     </div>
+    -->
 </body>
 
 </html>

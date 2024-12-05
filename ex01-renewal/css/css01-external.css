@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+/* External css  (이게 css 주석)*/
+h1 {
+    color: yellow !important;
+    background-color: black;
+
+    
+}
+
+/* 근데 이렇게 !important 붙여주면, 우선순위 다 무시하고 !important 색으로 지정됨 */

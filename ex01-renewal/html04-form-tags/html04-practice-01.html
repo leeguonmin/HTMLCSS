@@ -9,7 +9,93 @@
     <h1>Form 태그 실습</h1>
 
     <p>앞서 학습한 폼 관련 태그를 이용하여 가입 폼을 작성해 봅시다.</p>
-    <p>비즈니스를 운영한다는 생각으로 서비스를 구상해 보고, 해당 비즈니스 모델에 적합한 입력 항목을 선정, 가입 폼을 작성해 봅니다.</p>
+    <p>비즈니스를 운영한다는 생각으로 서비스를 구상해 보고, 
+        <br />해당 비즈니스 모델에 적합한 입력 항목을 선정, 가입 폼을 작성해 봅니다.</p>
+
+    <hr />
+    <hr />
+
+    <h1>회원 가입</h1>
+
+    <label for="username">이름</label>
+        <input type="text" id="username" name="username"
+            placeholder="사용자 이름을 입력하세요"      
+            required />
+
+        <label for="email">이메일</label>
+        <input type="text"
+            id="email"
+            name="email"
+            placeholder="이메일을 입력하세요"
+            required /><br />
+
+        <label for="주소">주소</label>
+        <input type="text" id="주소" name="adress" placeholder="주소를 입력하세요" required />
+        <br />
+        <label>성별</label>
+        <input type="radio" id="여자" name="성별" value="f"/>
+        <label for="여자">여</label>
+
+        <input type="radio" id="남자" name="성별" value="m" />
+        <label for="남자">남</label>
+
+        <input type="radio" id="모름" name="성별" value="x" />
+        <label for="모름">pass</label><br />
+        <br />
+
+        <label for="num">휴대폰 인증</label>
+        <input type="text" id="num" name="pohenumber" placeholder=" '-'빼고 입력하세요 " required /><br />
+        <label for="num2">인증 번호</label>
+        <input type="text" id="num2" name="pohenumber" placeholder=" 인증번호 4자리 " required /><br />
+        <br />
+
+
+        <label for="password">비밀 번호</label>
+        <input type="password" id="password" name="password" required />
+        <label>비밀번호 확인
+            <input type="password"
+                    name ="confirm_password" 
+                    placeholder="비밀번호 확인"
+                    required />
+        </label><br />
+
+        <br />
+        <label for="구매">예약인원</label>
+        <input type="number" id="구매" name="예약" placeholder=" 예약 인원 확인 " value="ye" />
+        <label for="구매"></label><br />
+
+        <label for="시간">예약시간 선택</label>
+        <select id="시간" name="예약시간">
+            <option value="1시">1시</option>
+            <option value="2시">3시</option>
+            <option value="5시">5시</option>
+            <option value="6시">6시</option>
+        </select> <br />
+        <br />
+        <label for="요청사항">요청사항</label><br />
+        <textarea id="요청사항" name="요청사항" rows="7" cols="30">요청 사항</textarea>
+
+
+
+        <br />
+        <br />
+        <label>필수 동의</label><br />
+        <input type="checkbox" 
+                id="필수" 
+                name="동의" 
+                value="ok" />
+        <label for="필수">[필수]만 14세 이상입니다</label><br />
+
+        <input type="checkbox" id="필수2" name="동의2" value="ok2" />
+        <label for="필수2">[필수]이용약관에 동의합니다</label><br />
+
+        <input type="checkbox" id="tea" name="favorite" value="t" />
+        <label for="tea">개인정보 수집 및 이용에 동의합니다</label><br />
+
+        <br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="예약하기" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="다시 작성하기" />
 
 </body>
 
