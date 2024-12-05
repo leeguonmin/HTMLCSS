@@ -11,6 +11,105 @@
 
     <!-- 가상의 멤버십 서비스를 가정하고 가입 폼을 만들어 봅시다 -->
 
+<!-- method : 데이터 전송 방식 ( GET or POST, default : GET )
+    action : 데이터를 전송 받아 처리할 서버의 페이지 (default : 현재 페이지) -->
+<form name = "registerForm" 
+    action="#"
+    method="post">
+
+    <fieldset>
+        <legend>회원 정보</legend>
+
+        <label for="username">사용자 이름</label>
+        <input type="text"
+            id="username"
+            name="username"
+            placeholder="사용자 이름을 입력하세요"      
+            required />
+
+        <label for="email">이메일</label>
+        <input type="text"
+            id="email"
+            name="email"
+            placeholder="이메일을 입력하세요"
+            required /><br />
+
+        <label for="password">비밀 번호</label>
+        <input type="password" id="password" name="password" required /><br />
+        <label>비밀번호 확인
+            <input type="password"
+                    name ="confirm_password" 
+                    required />
+        </label><br />
+
+
+        <label>성별</label>
+        <input type="radio" id="female" name="sex"
+                value="f" checked />
+        <label for="female">여성</label>
+        <input type="radio" id="male" name="sex" 
+                value="m" />
+        <label for="male">남성</label><br />
+
+
+        <label>선호음료</label>
+        <input type="checkbox" 
+                id="americano" 
+                name="favorite" 
+                value="a" />
+        <label for="americano">아메리카노</label>
+
+        <input type="checkbox" id="latte" name="favorite" value="l" />
+        <label for="latte">라떼</label>
+
+        <input type="checkbox" id="tea" name="favorite" value="t" />
+        <label for="tea">녹차/홍차</label>
+
+        <input type="checkbox" id="ade" name="favorite" value="ade" />
+        <label for="ade">에이드</label><br />
+
+
+        <label for="city">거주지</label>
+        <select id="city" name="city">
+            <option value="seoul" selected>서울</option>
+            <option value="busan">부산</option>
+            <option value="gwangju">광주</option>
+            <option value="etc">기타 지역</option>
+        </select><br />
+        <br />
+        <label for="comment">자기소개</label><br />
+        <textarea id="comment" name="comment" rows="5" cols="40">소개 내용</textarea>
+
+        <br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="가입하기" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="다시 작성하기" />
+    </fieldset>
+
+
+</form>
+
+
+    <!-- 선생님 
+     
+    
+    
+    
+    
+    
+    
+    
+    
+    -->
+
+
+
+
+
+    <!--
+        <h1>회원 가입 폼</h1>
+
+    < !-- 가상의 멤버십 서비스를 가정하고 가입 폼을 만들어 봅시다 -->
 </body>
 
 </html>
