@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- HTML 요소의 좌표는 기본적으로 상대 좌표계(static)-->
+
+    <style>
+        .container {
+            border: 2px solid;
+            /* height: 100px; */
+            height: 300px;
+
+
+            position: relative;     /*기준점 설정*/
+            margin-top: 50px; 
+
+            /* overflow: hidden; */         /*얘는 숨기는거*/
+            overflow: scroll;               /*얘는 스크롤 만들어서 담겨 있는거 보여주고*/
+        }
+
+
+        .box {
+            width: 100px;
+            height: 100px;
+
+            /*  좌표계를 absolute로 변경 */
+            position: absolute;
+
+
+        }
+
+        .box:nth-child(1) {
+            left: 10px;
+            top: 10px;
+            background-color: red;
+
+            
+        }
+
+        .box:nth-child(2) {
+            left: 50px;
+            top: 50px;
+            background-color: green;
+
+            z-index: 10;            /* 숫자가 클수록 앞으로 나와 */
+        }
+
+        .box:nth-child(3) {
+            left: 90px;
+            top: 90px;
+            background-color: blue;
+        }
+
+
+
+    </style>
+
+
+
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+    </div>
+    
+</body>
+</html>
