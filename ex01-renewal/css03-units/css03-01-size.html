@@ -3,6 +3,113 @@
 
 <head>
     <title>CSS 크기 단위 실습</title>
+
+    <style>
+        /* ㅡㅡㅡ 절대 단위 : px ㅡㅡㅡ */
+        /* 브라우저의 기본 글꼴 크기는 16px*/
+        #text-px > li:nth-child(2) {
+            font-size: 16px;
+        }
+
+        #text-px > li:nth-child(3) {
+            font-size: 24px;        /*(16에 1.5배)*/
+        }
+
+        #text-px > li:last-child {
+            font-size: 32px;        
+        }
+
+
+
+        /* ㅡㅡㅡ 상대 단위 : 백분율 단위 % ㅡㅡㅡ */
+        #text-percent > li:nth-child(2) {
+            font-size: 100%;
+        }
+
+        #text-percent > li:nth-child(3) {
+            font-size: 150%;
+        }
+
+        #text-percent > li:nth-child(4) {
+            font-size: 200%;
+        }
+
+
+        /* ㅡㅡㅡ 상태 단위 : 배수 단위 em ㅡㅡㅡ */
+        #text-em > li:nth-child(2) {
+            font-size:1.0em;
+        }
+
+        #text-em > li:nth-child(3) {
+            font-size:1.5em;
+        }
+
+        #text-em > li:last-child {
+            font-size: 2.0em;
+        }
+
+
+        /* rem : 
+            - em : 부모<div> 요소의 폰트 크기를 기준으로 상대적 크기
+            - rem : 최상위 요소(html)의 폰트 크기를 기준으로 상대적 크기를 잡아 */
+        #text-rem > li:nth-child(2) {
+            font-size: 1.0rem;
+        }
+
+        #text-rem > li:nth-child(3) {
+            font-size: 1.5rem;
+        }
+
+        #text-rem > li:nth-child(4) {
+            font-size: 2.0rem;
+        }
+
+        /* 상대 단위 기준 테스트 ( em 과 rem 의 차이를 보기 위해 ) */
+        ul {
+            font-size: 12px;
+            /*이거 지워야 <p>브라우저 기본 폰트 크기는 16px 입니다.</p> 이 조건에 해당 됨ㅋ */
+        }
+
+        /* 그 외 
+            vw : view width
+            vh : view height 등             -> 스마트폰 할 때 필요한 듯      
+        */
+
+
+        /* Box */
+        /* 픽셀 단위 사이즈 */
+        .pixel-box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            margin-bottom: 10px;
+        }
+
+        .percent-box {
+            width: 50%;             /* 브라우저 기준. 브라우저의 50% */
+            height: 100px;
+            background-color: lightgreen;
+            margin-bottom: 10px;
+        }
+
+        .em-box, .rem-box {
+            width: 10em;
+            height: 5em;
+            background-color: lightpink;
+            margin-bottom: 10px;
+        }
+
+        .rem-box {
+            background-color: lightcoral;
+        }
+
+
+
+
+
+    </style>
+
+
 </head>
 
 <body>
@@ -51,5 +158,59 @@
     <div class="em-box">em 단위</div>
     <div class="rem-box">rem 단위</div>
 </body>
+
+
+<!--
+<head>
+    <title>CSS 크기 단위 실습</title>
+</head>
+
+<body>
+
+    <h1>CSS 크기 단위 실습</h1>
+
+    <div>
+        <h2>텍스트</h2>
+        <p>브라우저 기본 폰트 크기는 16px 입니다.</p>
+        <h3>px</h3>
+        <ul id="text-px">
+            <li>px 단위로 크기를 지정해 봅시다 (브라우저 기본값)</li>
+            <li>px 단위로 크기를 지정해 봅시다</li>
+            <li>px 단위로 크기를 지정해 봅시다</li>
+            <li>px 단위로 크기를 지정해 봅시다</li>
+        </ul>
+
+        <h3>percent</h3>
+        <ul id="text-percent">
+            <li>% 단위로 크기를 지정해 봅시다 (브라우저 기본값)</li>
+            <li>% 단위로 크기를 지정해 봅시다</li>
+            <li>% 단위로 크기를 지정해 봅시다</li>
+            <li>% 단위로 크기를 지정해 봅시다</li>
+        </ul>
+
+        <h3>em</h3>
+        <ul id="text-em">
+            <li>em 단위로 크기를 지정해 봅시다 (브라우저 기본값)</li>
+            <li>em 단위로 크기를 지정해 봅시다</li>
+            <li>em 단위로 크기를 지정해 봅시다</li>
+            <li>em 단위로 크기를 지정해 봅시다</li>
+        </ul>
+
+        <h3>rem</h3>
+        <ul id="text-rem">
+            <li>rem 단위로 크기를 지정해 봅시다 (브라우저 기본값)</li>
+            <li>rem 단위로 크기를 지정해 봅시다</li>
+            <li>rem 단위로 크기를 지정해 봅시다</li>
+            <li>rem 단위로 크기를 지정해 봅시다</li>
+        </ul>
+    </div>
+
+    <h2>Box</h2>
+    <div class="pixel-box">픽셀(px) 단위</div>
+    <div class="percent-box">백분율(%) 단위</div>
+    <div class="em-box">em 단위</div>
+    <div class="rem-box">rem 단위</div>
+</body>
+-->
 
 </html>
