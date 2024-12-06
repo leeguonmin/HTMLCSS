@@ -3,6 +3,83 @@
 
 <head>
     <title>CSS Border 실습</title>
+
+    <style>
+        .box {
+            width: 200px;
+        }
+
+        .solid-border {
+            /*
+            border-width: 2px;
+            border-style: solid;
+            border-color: red;
+            */
+            border: 2px solid red;
+        }
+
+        .dashed-border {
+            border: 2px dashed blue;
+        }
+
+        .dotted-border {
+            border: 2px dotted green;
+        }
+
+        .double-border {
+            border: 4px double orange;
+        }
+
+        .groove-border {
+            border: 4px groove purple ;
+        }
+
+        /* border-radius */
+        img.round {
+            /*
+            border-top-left-radius: 100px;
+            border-top-right-radius: 200px;
+            border-bottom-right-radius: 300px;
+            border-bottom-left-radius: 400px;           /* 이케 하니까 더 귀엽군....*/
+            border-radius: 100px 200px 300px 400px;
+            border-radius: 50%;
+        }
+
+
+    </style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <h1>CSS Border 실습</h1>
+
+    <h2>border</h2>
+    <div class="box solid-border">Solid Border</div>
+    <div class="box dashed-border">Dashed Border</div>
+    <div class="box dotted-border">Dotted Border</div>
+    <div class="box double-border">Double Border</div>
+    <div class="box groove-border">Groove Border</div>
+            <!-- 박스 클래스-->
+
+    <h2>border-radius</h2>
+    <div><img class="round" src="../images/penguins.jpg"></div>
+</body>
+
+</html>
+
+
+
+
+
+<!--
+<head>
+    <title>CSS Border 실습</title>
 </head>
 
 <body>
@@ -18,5 +95,4 @@
     <h2>border-radius</h2>
     <div><img class="round" src="../images/penguins.jpg"></div>
 </body>
-
-</html>
+-->

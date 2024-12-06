@@ -3,6 +3,67 @@
 
 <head>
     <title>CSS Box Model 실습</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .padding-box {
+            display: flex;
+
+            border: 1px dotted red;
+            background-color: pink;
+            justify-content: center;
+            align-items: center;
+            /* flex 모델 
+            - justify-content : main-axis 방향으로 정렬하는 방법
+            - align-items : cross-axis 방향으로 정렬하는 방법 */
+
+
+        }
+
+        .margin-box {       
+            display: flex;
+            background-color: #00ff00;
+            border: 1px dotted green;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bottom-box {
+            display: flex;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        /*margin 테스트*/
+        .margin-box {
+            /* 
+            margin: 100px;
+            margin: 100px 50px;
+            margin: 100px 50px 25px;        /*위 오른쪽 아래 + 왼쪽값은 없어서, 오른쪽과 똑같이 설정됨 
+            margin: 100px 50px 25px 12px;   /*위 오른쪽 아래 왼쪽 
+            margin: 100px auto;             /*위, 아래는 100  / 오른쪽,왼쪽은 딱맞게 자동 
+            */
+            margin-top: 100px;
+            margin-right: 50px;
+            margin-bottom: 25px;
+            margin-left: 12px;
+        } 
+
+        /*padding 테스트*/
+        .padding-box {                  /* 패딩은 내부 영역*/
+            padding: 100px;
+            padding: 100px 50px 25px 12px;
+
+        }
+
+    </style>
 </head>
 
 <body>
