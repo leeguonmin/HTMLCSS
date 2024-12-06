@@ -3,6 +3,60 @@
 
 <head>
     <title>CSS 색상 실습</title>
+    <style>
+        /* body {
+            background-color: yellow;
+            background-color: rgb(219, 236, 241);
+        } */
+
+        div {
+            padding: 10px;
+            margin: 10px;
+            color:white;
+        }
+
+        /* 키워드 색상 */
+        .keyword-color {
+            background-color: orange;
+        }
+
+        /*  hex 색상 */
+        .hex-color {
+            background-color: #ffa000;
+        }
+
+        /* rgb 함수 색상 */
+        .rgb-color {
+            background-color: rgb(255,160,0);
+        }  
+
+        /* rgba 함수 색상 
+            a : 알파채널 (투명도) 
+                0 (완전 투명) ~ 1.0 (불투명)
+            */
+        .rgba-color {                          /* 0.5만큼 투명하게 */
+            background-color: rgba(255,160,0,0.5); 
+            background-color: #ffa0007f;     
+        }                                      
+        
+
+        /* hsl 함수 색상 (개발자보다도 디자이너가 쓰는 코드, 색상 채도 밝기) 
+            - huy (색조) : 0도~ 360도
+            - saturation (채도) : 0~100% 
+            - lightness (명도) : 0(빛이 없다) ~ 50% (일반적인 정상 밝기) ~ 100% (완전한 밝기) */
+        .hsl-color {
+            background-color: hsl(35, 100%, 50%);
+        }
+
+
+        .hsla-color {
+            background-color: hsla(35,100%,50%,0.3);
+        }
+
+
+    </style>
+
+
 </head>
 
 <body>
@@ -19,3 +73,23 @@
 </body>
 
 </html>
+
+
+<!--
+<head>
+    <title>CSS 색상 실습</title>
+</head>
+
+<body>
+
+    <h1>CSS 색상 실습</h1>
+
+    <div class="keyword-color">키워드 색상</div>
+    <div class="hex-color">HEX 색상</div>
+    <div class="rgb-color">RGB 색상</div>
+    <div class="rgba-color">RGBA 색상</div>
+    <div class="hsl-color">HSL 색상</div>
+    <div class="hsla-color">HSLA 색상</div>
+
+</body>
+-->
