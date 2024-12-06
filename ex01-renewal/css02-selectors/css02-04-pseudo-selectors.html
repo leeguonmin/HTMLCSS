@@ -3,6 +3,65 @@
 
 <head>
     <title>CSS 가상 클래스 실습</title>
+    <style>
+        /* 반응 선택자 */
+        a:link {
+            /* a 태그 only */
+            color: green;       /* 방문 안 했으면 초록색 => 클릭을 한번도 안했으면 초록*/
+        }
+
+        a:visited {
+            /* a 태그 only */
+            color:gray;         /* 방문 했으면 회색 => 클릭하면 회색으로 바뀜 */
+        }
+
+        a:hover{
+            color:orangered;       /* 마우스 커서 가져다 대면 색 orangered 로 변함*/
+        }
+
+        a:active {
+            color: blue;            /* 마우스 커서로 클릭하면 눌렀던 순간 blue 로 잠깐 변함 */
+        }
+
+        /* 반응 선택자는 순서 중요함
+            선언 순서에 유의 */
+
+
+        /* 상태 선택자 */
+        input:focus {
+            background-color: lightskyblue;             /* 입력하려고 커서 올려 누르면, 색  lightskyblue로 변함*/
+        }
+
+        input:disabled {
+            background-color: grey;                     /* disabled 상태인 걸 선택해서 색을 grey로 바꿔라 */
+        }
+
+        /*타입이 체크박스인데, 체크박스에 해당되는 레이블을? */
+        input[type="checkbox"]:checked + label {
+            font-weight: bold;                              /* checkbox 선택하면 bold로 변함*/
+        }
+
+
+
+        /* 구조 선택자 */
+        ul#list > li:nth-child(2n) {
+            color:green;                                /* 짝수에 있는걸 green 으로 */    
+        }
+
+        #list > li:nth-child(2n+1) {
+            color:blue;                                 /* 홀수에 있는걸 blue 로 */
+        }
+
+        ul#list > li:first-child {                         /* 맨 앞에 있는걸 blueviolet 로 */
+            color:blueviolet;
+        }
+
+        ul#list > li:last-child {                           /* 맨 뒤에 있는걸 rgb로 */
+            color:rgb(230, 0, 57);
+        }
+
+
+    </style>
 </head>
 
 <body>
@@ -11,9 +70,47 @@
     <h2>반응 선택자 실습</h2>
     <a href="#">링크 (hover 실습)</a>
 
+
+
+
+
     <h2>상태 선택자 실습</h2>
-    <input type="text" placeholder="텍스트 입력 (focus 실습)">
-    <input type="text" placeholder="텍스트 입력 (disabled 실습)" disabled>
+    <input type="text" 
+            placeholder="텍스트 입력 (focus 실습)">
+
+    <input type="text" placeholder="텍스트 입력 (disabled 실습)" disabled>   <!-- disabled 하면 입력도 안되고 선택도 안되고-->
+   
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox">체크박스 (checked 실습)</label>
+
+
+
+
+
+    <h2>구조 선택자 실습</h2>
+    <ul id="list">
+        <li>첫 번째 형제</li>
+        <li>두 번째 형제</li>
+        <li>세 번째 형제</li>
+        <li>네 번째 형제</li>
+        <li>다섯 번째 형제</li>
+        <li>여섯 번째 형제</li>
+    </ul>
+
+
+
+
+        <!--
+            <h1>CSS 가상 클래스 실습</h1>
+
+    <h2>반응 선택자 실습</h2>
+    <a href="#">링크 (hover 실습)</a>
+
+    <h2>상태 선택자 실습</h2>
+    <input type="text" 
+            placeholder="텍스트 입력 (focus 실습)">
+    <input type="text" placeholder="텍스트 입력 (disabled 실습)" disabled> 
+   
     <input type="checkbox" id="checkbox">
     <label for="checkbox">체크박스 (checked 실습)</label>
 
@@ -26,6 +123,8 @@
         <li>다섯 번째 형제</li>
         <li>여섯 번째 형제</li>
     </ul>
+        -->
+    
 </body>
 
 </html>
