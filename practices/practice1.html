@@ -5,9 +5,63 @@
 <title>테이블</title>
 
 <style type="text/css" media="screen">
+	body {
+		font-family: 'Courier New', Courier, monospace;
+		font-size: 0.75em;
+		color:#333;
+	}
+	.tbl-ex {
+		margin: 20px auto 0px;
+		border: 1px solid #333;
+		/* border-top: 1px solid #333;
+		border-bottom: 1px solid #333; */
+		border-collapse: collapse;
+
+		border-left: none;
+		border-right: none;
+		
+	}
+
+	.tbl-ex tr th{
+		border: 2px solid #333;
+		/* border-top: 2px solid hsl(239, 100%, 18%);
+		border-bottom: 2px solid hsl(239, 100%, 18%); */
+
+		border-left: none;
+		border-right: none;
+
+
+		padding: 8px;
+		background-color: #247aca;
+		font-size: 1.1em;
+		color:#fff;
+	}
+
+	.tbl-ex tr td{
+		border: 1px dotted #495d74;
+		border-left: none;
+		border-right: none;
+		/* border-top: 1px dotted #333;
+		border-bottom: 1px dotted #333; */
+		padding: 8px;
+	}
+
+
+	.tbl-ex tr:nth-child(2n) {
+		background-color: #E8ECF6;
+	}
+
+	.tbl-ex tr:hover,
+	.tbl-ex tr:active {
+		background-color: rgb(192, 210, 243);
+	}
+		
 
 </style>
 </head>
+
+
+
 <body>
 	<table class="tbl-ex">
 		<tr>

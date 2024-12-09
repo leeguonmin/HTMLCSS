@@ -3,11 +3,80 @@
 <head>
 <meta charset="utf-8">
 <title>리스트를 이용한 메뉴 만들기</title>
+<script src="" type="text/javascript"></script>
 <style type="text/css">
+    body {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 0.75em;
+        color:rgb(0, 0, 0);
+    }
+
+    .tab-box {
+        margin: 20px auto 0px;
+        width: 520px;
+
+        position: relative;
+        
+    }
+
+    .tab-box ul {
+        display: flex;              /*이거 해줘야 메뉴가 역순 안됨*/
+        list-style-type: none;
+        height: 27px;
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    .tab-box li {
+        float: right;
+        display: flex;
+        width: 100px;
+        height: 22px;
+        border: 1px solid #1a0499;
+        background-color: #8e85e0;
+
+        text-align: center;
+        padding-top: 3px;
+        margin-right: 2px;
+
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        color:white;
+
+        
+    }
+
+    #tab {
+        margin-top: -1px;
+        text-align: center;
+        line-height: 200px;
+        
+        position: absolute;
+        width: 100%;
+    }
+
+    .tab-box .selected {
+        background-color: #381aa3;
+    }
+
+    /* .tab-box .selected:hover,
+    .tab-box .selected:active {
+        background-color: black;
+        color: yellow;
+    } */
+    
 
 </style>
-<script src="" type="text/javascript"></script>
+
 </head>
+
+
+
+
 <body>
 <div class="tab-box">
 	<ul>
@@ -17,8 +86,9 @@
         <li class="selected">메뉴 4</li>
         <li>메뉴 5</li>
     </ul>
+    
     <div>
-    	탭뷰입니다.
+    	<textarea id="tab" name="tab">탭뷰입니다</textarea>
     </div>
 </div>    
 </body>

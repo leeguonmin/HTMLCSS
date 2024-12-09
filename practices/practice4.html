@@ -5,14 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>로그인 폼 연습</title>
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 0.75em;
+            color:#006eff;
+
+        }
+
+        #login-form {
+            width: 180px;
+            /* height: 50px; */
+            padding: 10px;
+            border: 1px solid #4c94e7;
+            border-radius: 10px;
+
+            margin: 50px auto;
+        }
+
+        label {
+            display: block;       /* 아니 <br /> 삭제해도 안 떨어지던데..? 이거 굳이 할 필요가 없던데..? 뭐지........*/
+            margin: 5px 0 3px;
+
+        }         
+        
+        input {
+            margin: 5px 0 3px;
+        }
+
+        input[type="image"] {
+            display: block; 
+            margin: 10px auto;
+            width: 65px;
+            height: 26px;
+            
+        }
+
+        input[type="password"] {
+        border: 1px solid #328bdf; /* 테두리 두께와 색상 설정 */
+        outline: none; /* 포커스 시 나타나는 기본 외곽선 제거 */
+            }
+
+        input[type="text"] {
+            border: 1px solid #328bdf; /* 테두리 두께와 색상 설정 */
+            outline: none; /* 포커스 시 나타나는 기본 외곽선 제거 */
+        }
+
+
+
+
+    </style>
 </head>
+
+
+
+
+
+
 <body>
-    <form>
+    <form id="login-form">
         <label for="userid">아이디</label>
-        <input type="text" name="userid"><br/>
+        <input type="text" name="userid">
         <label for="password">패스워드</label>
-        <input type="password" name="password"><br/>
+        <input type="password" name="password">
         <input type="image" src="./images/login.png" />
     </form>
 </body>
+
+
+
+
+
+
 </html>
