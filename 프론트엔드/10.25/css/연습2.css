@@ -1,0 +1,91 @@
+
+
+.header {
+	height: 80px;
+	width: 1000px;
+	background: #353535;
+	position: absolute;
+	margin: 30px auto 0;
+	left: 50%;
+	margin-left: -500px;
+	z-index: 999;
+}
+
+
+.vlsual {
+	background: #6394ed;
+	width: 100%;
+	height: 350px;
+}
+/*여기에 포지션이 들어가면 안됨. 핑크가 안 내려가*/
+/*원리는 모르겟어 그렇다고합니다 */
+
+.contents {
+	background: deeppink;
+	width: 1000px;
+	height: 400px;
+	margin: 20px auto 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+	position: relative;
+}
+
+.contents div {
+	/*display: flex;*/
+	/*flex-wrap: wrap;*/
+	background: gold;
+}
+
+
+.contents .box1 {
+	height: 198px;
+	width: 180px;
+}
+
+.contents .box2 {
+	height: 400px;
+	width: 314px;
+}
+
+.contents .box3 {
+	height: 400px;
+	width: 314px;
+}
+
+.contents .box4 {
+	height: 198px;
+	width: 180px;
+}
+
+.contents .box5 {
+	height: 198px;
+	width: 180px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.contents .box6 {
+	height: 198px;
+	width: 180px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+
+/*박스5, 6을 못해서 진짜 겁나 오래걸렸음 연습해라*/
+/*큰 태크에다가 (예를 들어 여기선 contents 에*/
+/*position: relative 이거 기준 설정을 해주고*/
+/*박스 5, 6,은 position: absolute 걸어서*/
+/*이동시켜주면 됨)*/
+
+
+.footero {
+	height: 50px;
+	width: 1000px;
+	margin: auto;
+	margin-top: 30px;
+	background: black;
+}

@@ -1,0 +1,21 @@
+/*.wrap {*/
+/*	width: 300px;*/
+/*	margin: 0;*/
+/*}*/
+
+/*.wrap div {*/
+/*	height: 200px;*/
+/*	background: orange;*/
+/*	margin: 10px;*/
+/*	font-size: 10px;*/
+/*}*/
+
+
+.wrap {
+	font-size: 0;
+}
+
+.wrap span {
+	background: orange;
+	font-size: 20px;
+}

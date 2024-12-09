@@ -1,0 +1,145 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	height: 100px;
+	width: 1000px;
+	margin-bottom: 10px;
+	background: orange;
+	/*margin-left: 10px;*/
+}
+
+.bg {
+	height: 700px;
+	display: flex;
+	/*margin-left: 10px;*/
+}
+
+.bg .sub {
+	background: cornflowerblue;
+	width: 200px;
+	margin-right: 10px;
+}
+
+.bg .contents {
+	background: #92c32a;
+	width: 790px;
+}
+
+.list {
+	height: 130px;
+	display: flex;
+	margin-top: 30px;
+	/*margin-left: 10px;*/
+}
+
+.list div {
+	background: deeppink;
+}
+
+.list .bottom01 {
+	width: 330px;
+}
+
+.list .bottom02 {
+	margin: 0 5px;
+	width: 330px;
+}
+
+.list .bottom03 {
+	width: 330px;
+}
+
+.footer {
+	background: black;
+	height: 50px;
+	margin-top: 20px;
+	width: 1000px;
+	/*margin-left: 10px;*/
+}
+
+
+
+
+
+/*<!--이 밑으로는 선생님이 시범 보여주신거 따라쓴거임 -->*/
+
+
+#root {
+	margin: 0 auto;
+	width: 1000px;
+	border: 5px solid black;
+	margin-top: 50px;
+}
+
+/*#root div {*/
+/*	margin: 100px;*/
+/*}*/
+
+	/*그냥 보여주려고 쓴거임 위에꺼는*/
+
+.header2 {
+	/*width: 1000px;*/
+	height: 100px;
+	background: orangered;
+	/*margin: 0 auto;*/
+}
+
+/*margin: 0 auto; 은 페이지 중앙으로 보내는 기능임
+원리 > 뭐라고 적어야할지 모르겠다 하여튼 */
+
+
+.wrap2 {
+	width: 1000px;
+	/*height: 700px;*/
+	/*background: red;*/
+	/*margin: 0 auto;*/
+	margin: 20px 0 30px;
+	/*margin-top: 20px;*/
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrap2 .sub2 {
+	width: 200px;
+	height: 700px;
+	background: #1c8fd1;
+}
+
+.wrap2 .con2 {
+	height: 700px;
+	width: 790px;
+	background: #92c32a;
+}
+
+
+.bottomlist2 {
+	/*width: 1000px;*/
+	height: 130px;
+	/*margin: 0 auto;*/
+	margin-top: 30px;
+	display: flex;
+}
+
+.bottomlist2 div {
+	width: 330px;
+	height: 130px;
+	background: hotpink;
+}
+
+.bottomlist2 .ccc {
+	margin: 0 5px;
+}
+
+
+
+.footer2 {
+	/*width: 1000px;*/
+	height: 50px;
+	background: black;
+	/*margin: 0 auto;*/
+	margin-top: 20px;
+}

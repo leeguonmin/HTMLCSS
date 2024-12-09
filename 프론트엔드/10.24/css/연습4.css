@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrap {
+	width: 600px;
+	height: 600px;
+	background: hotpink;
+	margin: 100px auto;
+	position: relative;
+	
+}
+
+.wrap div {
+	width: 200px;
+	height: 200px;
+}
+
+.wrap .box1 {
+	background: red;
+	position: absolute;
+	left: 0;
+	top : 0;
+}
+
+.wrap .box2 {
+	background: orangered;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.wrap .box3 {
+	background: dodgerblue;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.wrap .box4 {
+	background: greenyellow;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.wrap .box5 {
+	background: mediumpurple;
+	position: absolute;
+	/*left: 50%;*/
+	/*top: 50%;*/
+	/*margin-left: -100px;*/
+	/*margin-top: -100px;*/
+	top: 200px;
+	left: 200px;
+}

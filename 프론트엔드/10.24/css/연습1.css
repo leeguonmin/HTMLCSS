@@ -1,0 +1,89 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+.ex {
+	width: 900px;
+	margin: 0 auto;
+}
+
+.header {
+	width: 900px;
+	height: 120px;
+	margin-bottom: 20px;
+	background: royalblue;
+	/*margin: 0 auto;*/
+}
+
+.wrap {
+	height: 400px;
+	display: flex;
+}
+
+.wrap div {
+	background: orangered;
+}
+
+.wrap .left {
+	width: 200px;
+}
+
+.wrap .center {
+	width: 420px;
+	margin: 0 20px;
+}
+
+.wrap .right {
+	width: 240px;
+}
+
+.list {
+	background: cornflowerblue;
+	margin-top: 10px;
+	display: flex;
+	padding: 10px;
+}
+
+.list div {
+	height: 70px;
+	background: navy;
+}
+
+.list .box1 {
+	width: 170px;
+	margin-right: 8px;
+}
+
+.list .box2 {
+	width: 170px;
+	margin-right: 8px;
+}
+
+.list .box3 {
+	width: 170px;
+	margin-right: 8px;
+}
+
+.list .box4 {
+	width: 170px;
+	margin-right: 8px;
+}
+
+.list .box5 {
+	width: 168px;
+}
+
+.footer {
+	background: black;
+	margin-top: 30px;
+	height: 70px;
+	/*width: 900px;*/
+}
+
+
+/*gap*/
+/*'아이템'에만 적용됨*/
+     /*gap 8을 주면 아이템과 아이템 사이에만 8이 들어가*/

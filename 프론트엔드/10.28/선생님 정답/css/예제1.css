@@ -1,0 +1,121 @@
+
+#root {}
+
+header {
+	height: 200px;
+	/*background: navy;*/
+	background: white;
+	display: flex;
+}
+
+header .logo {
+	/*border: 2px solid black;*/
+}
+
+header .gnb {
+	margin-left: 100px;
+	/*border: 2px solid black;*/
+	/*font-size: 0;*/
+	display: flex;
+	/*gap: 10px;*/
+}
+
+header .gnb a {
+	display: block;
+}
+
+header .gnb img {
+	display: block;
+}
+/*img가 a 안에 있는 거니까 img 앞에 굳이 a 안 적어도 됨 */
+
+header .search {
+	margin-left: 100px;
+	
+	width: 210px;
+	height: 30px;
+	/*background: red;*/
+}
+
+header .search input {
+	width: 160px;
+}
+
+.visual {
+	position: relative;
+	/*height: 400px;*/
+	background: deepskyblue;
+	margin-top: 50px;
+	padding-top: 250px;
+	padding-bottom: 50px;
+}
+.visual .group {
+	width: 1000px;
+	display: flex;
+	margin: 0 auto;
+	/*position: absolute;*/
+	/*left: 50%;*/
+	/*bottom: 30px;*/
+	/*margin-left: -500px;*/
+	/*transform: translateX(-50%);*/
+}
+.visual .group div {
+	width: 25%;
+	height: 100px;
+	background: mediumseagreen;
+}
+.visual .group .orange {
+	background: darkorange;
+}
+
+.wrap {
+	width: 1000px;
+	margin: 40px auto 50px;
+}
+.wrapHead {
+	height: 100px;
+	background: mediumslateblue;
+}
+.wrapBody {
+	position: relative;
+	height: 400px;
+	margin: 50px 0 20px;
+}
+.wrapBody .group {
+	width: 950px;
+	height: 350px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 10;
+	
+	display: flex;
+	gap: 10px;
+}
+.wrapBody .group div {
+	width: 310px;
+	height: 350px;
+	background: mediumorchid;
+}
+.wrapBody .back {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 200px;
+	width: 100%;
+	background: mediumaquamarine;
+}
+
+.wrapFooter {
+	height: 100px;
+	background: goldenrod;
+}
+
+
+
+
+
+
+footer {
+	height: 150px;
+	background: #2c2c2c;
+}
