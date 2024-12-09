@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../ex01-renewal"
+		},
+		{
+			"path": "../hw01-html"
+		},
+		{
+			"path": "../hw02-css"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../프론트엔드"
+		}
+	],
+	"settings": {}
+}
