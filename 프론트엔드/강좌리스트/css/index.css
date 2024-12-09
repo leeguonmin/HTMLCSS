@@ -1,0 +1,118 @@
+
+#root {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+header {
+	/*height: 100px;*/
+	/*background: red;*/
+}
+/*높이를 지정하지않으면 박스 크기가 자동으로 글자에 맞춰짐 */
+
+header h2 {
+	font-size: 32px;
+	font-weight: bold;
+}
+
+header p {
+	margin-top: 15px;
+}
+
+.container {
+	/*height: 500px;*/
+	/*background: cornflowerblue;*/
+	margin-top: 30px;
+}
+
+.cardcontents {
+	display: flex;
+	justify-content: space-between;
+}
+
+.cardcontents .card {
+	width: 290px;
+	height: 400px;
+	box-sizing: border-box;
+	/*border: 5px solid black;*/
+}
+
+.cardcontents .card .top img {
+	width: 100%;
+}
+
+.cardcontents .card .bottom {}
+.cardcontents .card .bottom div {
+	box-sizing: border-box;
+	/*border: 2px solid black;*/
+	margin-top: 5px;
+}
+
+.cardcontents .card .bottom .title {
+	font-weight: bold;
+	/*height: 33px;*/
+	
+	font-size: 16px;
+	line-height: 1.5em;
+	height: 3em;
+	/*line-height 의 두배가 높이;*/
+	
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.cardcontents .card .bottom .category {
+	margin-top: 10px;
+	font-weight: bold;
+	color: #195ec3;
+}
+
+.cardcontents .card .bottom .rating {
+	/*margin-top: 5px;*/
+	/*color: red;*/
+	display: flex;
+	gap: 6px;
+}
+
+.cardcontents .card .bottom .icons {
+	display: flex;
+}
+.cardcontents .card .bottom .icons .fa {
+	color: gold;
+}
+
+.cardcontents .card .bottom .rating .icons .reiviewcnt {
+	color: black;
+}
+
+.cardcontents .card .bottom .price {
+	/*margin-top: 5px;*/
+	color: blue;
+	font-weight: bold;
+}
+
+.cardcontents .card .bottom .tags {
+	margin-top: 8px;
+	display: flex;
+	gap: 4px;
+}
+
+.cardcontents .card .bottom .tags div {
+	padding: 2px 8px;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+.cardcontents .card .bottom .tags .best {
+	background: #fbd6dc;
+}
+.cardcontents .card .bottom .tags .only {
+	background: #e5ebfa;
+}
+
+.cardcontents .card .bottom .tags .discnt {
+	background: #daf6e4;
+}
+

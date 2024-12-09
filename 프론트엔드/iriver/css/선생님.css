@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+body {
+	font-family: 'noto sans KR', sans-serif;
+	/*font-weight: 700;*/
+}
+
+a {
+	display: block;
+	color: black;
+	text-decoration: none;
+}
+
+button, input {
+	font-family: 'noto sans KR', sans-serif;
+}
+
+
+header {
+	height: 80px;
+	/*background: red;*/
+	border-bottom: 2px solid red;
+}
+
+header .inner {
+	width: 970px;
+	height: 80px;
+	/*background: orangered;*/
+	margin: 0 auto;
+}
+
+header .topMenu {
+	/*border: 3px solid black;*/
+	/*text-align: right;*/
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 9px;
+	padding-top: 5px;
+}
+
+header .topMenu a {
+	font-size: 0;
+	/*border: 2px solid steelblue;*/
+}
+header .topMenu img {
+	display: block;
+}
+
+
+
+
+header .mainMenu {
+	/*border: 3px solid blue;*/
+	display: flex;
+	align-items: flex-start;
+	position: relative;
+	margin-top: 14px;
+}
+
+header .mainMenu a {}
+
+header .mainMenu .gnb {
+	display: flex;
+	margin-left: 40px;
+	
+}
+
+header .mainMenu .gnb li:nth-child(5),
+header .mainMenu .gnb li:nth-child(6),
+header .mainMenu .gnb li:nth-child(7),
+header .mainMenu .gnb li:nth-child(8) {
+	margin-left: 15px;
+}
+
+header .mainMenu .search {
+	/*width: 150px;*/
+	/*height: 30px;*/
+	
+	margin-left: auto;
+	/*position: absolute;*/
+	/*top: 0;*/
+	/*right: 0;*/
+	display: flex;
+	font-size: 0;
+}
+header .mainMenu .search label {
+	display: flex;
+}
+header .mainMenu .search input {
+	width: 128px;
+	height: 20px;
+	border: 1px solid gray;
+	border-right: 0;
+}
+header .mainMenu .search button {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	/*background: red;*/
+	font-size: 0;
+}
+
+
+
+.main {
+	width: 970px;
+	/*background: forestgreen;*/
+	margin: 50px auto 0;
+}
+
+.main .visual {
+	/*height: 350px;*/
+	/*background: blue;*/
+	
+}
+
+.main .board_list {
+	height: 180px;
+	background: black;
+	margin: 30px 0 50px;
+}
+
+.main .board_bottomlist {
+	height: 34px;
+	background: gray;
+}
+
+
+main {
+	width: 970px;
+	border: 3px solid black;
+	margin: 50px auto 0;
+}
+.visual {
+	/*height: 465px;*/
+	position: relative;
+	/*display: none;*/
+}
+.visual .prev {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.visual .next {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.visual .productBtn {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.boardList {
+	/*height: 180px;*/
+	/*background: orange;*/
+	margin: 30px 0 50px;
+	display: flex;
+	gap: 20px;
+}
+.boardList .board {
+	width: 310px;
+	height: 180px;
+	/*background: red;*/
+}
+.boardList .boardHead {
+	border-bottom: 1px solid black;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10px 10px;
+	align-items: flex-start;
+	/*margin-bottom: 100px;*/
+	/*background: greenyellow;*/
+}
+.boardList .boardContent {
+	/*background: blue;*/
+}
+
+.boardList .boardContent ul {}
+.boardList .boardContent ul li {
+	font-size : 13px;
+	font-weight: 400;
+	/*border: 2px solid black;*/
+	display: flex;
+	
+	margin-top: 8px;
+	
+	padding: 0 10px;
+}
+
+.boardList .boardContent ul li:nth-child(1) {
+	margin-top: 10px;
+}
+
+.boardList .boardContent ul .first {
+	margin-top: 18px;
+}
+
+.boardList .boardContent ul li a {
+	color: #333;
+	
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	
+	margin-right: 20px;
+	line-height: 1.1;
+	
+	text-decoration: none;
+}
+
+/*text-decoration: none; 하이퍼링크 밑줄 없애는*/
+/*맨 위에 a 기본 설정으로 미리 해두면 좋음*/
+/*a {*/
+/*	display: block;*/
+/*	color: black;*/
+/*	text-decoration: none;*/
+/*}*/
+/*이렇게*/
+/*text-decoration: none; 이거 넣을땐 꼭 a 안에 넣는 거임 */
+
+
+.boardList .boardContent ul li:hover a {
+	text-decoration: underline;
+}
+
+
+.boardList .boardContent ul li span {
+	color: #999;
+}
+
+
+
+.boardList .banner {
+	/*background: blue;*/
+	/*height: 80px;*/
+	display: flex;
+	gap: 8px;
+	padding: 0 10px 12px;
+	/*padding-bottom: 12px;*/
+	border-bottom: 1px dotted black;
+	margin-top: 10px;
+}
+
+.boardList .banner p {
+	color: orangered;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+.bottomList {
+	height: 34px;
+	/*background: dodgerblue;*/
+	display: flex;
+}
+
+.bottomList div {
+	/*border: 2px solid black;*/
+}
+
+.bottomList div img {
+	display: block;
+
+}
+
+.bottomList i {
+	margin: 0 20px 0 25px;
+}
+
+
+footer {
+	height: 80px;
+	background: #292929;
+	margin-top: 60px;
+}
+
+footer .inner {
+	width: 970px;
+	height: 80px;
+	background: #292929;
+	margin: 0 auto;
+	position: relative;
+}
+
+footer .footmenu {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	padding-top: 10px;
+}
+footer .footmenu div {
+	/*border: 1px solid yellow;*/
+	
+	font-size: 0;
+	/*display: block;*/
+	
+	
+}
+footer .footmenu div img {}
+
+footer .footmenu img {
+	display: block;
+}
+
+footer .footmenu i {
+	margin: 0 10px;
+}
+
+
+footer .family {
+	position: absolute;
+	right: 0;
+	bottom: 50px;
+	cursor: pointer;
+}
+
+footer .family ul {
+	background: white;
+	display: none;
+}
+footer .family ul li {
+	/*border: 1px solid red;*/
+	padding-top: 2px 12px;
+}
+
+footer .family ul li a {
+	font-size: 10px;
+	font-weight: 700;
+	color: #4a4a4a;
+	line-height: 1.5;
+}
+
+footer .family:hover ul {
+	display: block;
+}
+
+footer .family ul li:hover {
+	background: #222;
+	transform: translateX(-5px);
+	transition: 0.3s;
+}
+
+footer .family ul li:hover a {
+	color: white;
+}

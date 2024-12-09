@@ -1,0 +1,9 @@
+/*google web font*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Noto+Sans+KR:wght@500&display=swap');
+/* 'Montserrat' */
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Noto+Sans+KR:wght@500&display=swap');
+/* 'Monoton' */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Raleway:wght@300&display=swap');
+/* 'Raleway' */

@@ -1,0 +1,61 @@
+
+/*.container {*/
+/*	width: 900px;*/
+/*	background: deeppink;*/
+/*	!*height: 280px;*!*/
+/*	display: flex;*/
+/*	margin-left: 20px;*/
+/*	margin-top: 30px;*/
+/*}*/
+
+/*.left {*/
+/*	background: lime;*/
+/*	width: 300px;*/
+/*	height: 280px;*/
+/*}*/
+
+/*.center {*/
+/*	width: 280px;*/
+/*	height: 280px;*/
+/*	background: darkslateblue;*/
+/*	margin: 0 10px;*/
+/*}*/
+
+/*.rigrt {*/
+/*	background: orange;*/
+/*	width: 300px;*/
+/*	height: 280px;*/
+/*}*/
+
+
+
+
+.container {
+	width: 900px;
+	background: deeppink;
+	/*height: 280px;*/
+	display: flex;
+	margin-left: 20px;
+	margin-top: 30px;
+}
+
+.container div {
+	width: 300px;
+	height: 280px;
+}
+.container .left {
+	background: lime;
+}
+
+.container .center {
+	width: 280px;
+	background: darkslateblue;
+	margin: 0 10px;
+}
+
+.container .rigrt {
+	background: orange;
+}
+
+
+/*> 이렇게 쓰는 방법도 있음*/

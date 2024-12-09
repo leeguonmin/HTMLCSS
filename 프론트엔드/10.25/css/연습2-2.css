@@ -1,0 +1,48 @@
+
+.header {
+	width: 1000px;
+	height: 80px;
+	background: #353535;
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	margin-left: -500px;
+}
+
+.vlsual {
+	background: #6f6fff;
+	width: 100%;
+	height: 350px;
+}
+
+.contents {
+	background: aqua;
+	width: 1000px;
+	height: 400px;
+	margin: 20px auto 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+}
+
+.contents div {
+	background: navy;
+}
+
+.contents .box {
+	height: 198px;
+	width: 180px;
+}
+
+.contents .box2 {
+	height: 400px;
+	width: 314px;
+}
+.contents .box3 {
+	height: 400px;
+	width: 314px;
+}
+
+.contents .box .in2 {
+
+}

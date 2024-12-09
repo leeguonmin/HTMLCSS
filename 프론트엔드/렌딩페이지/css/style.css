@@ -1,0 +1,314 @@
+/*google web font*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Noto+Sans+KR:wght@500&display=swap');
+/* 'Montserrat' */
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Noto+Sans+KR:wght@500&display=swap');
+/* 'Monoton' */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Raleway:wght@300&display=swap');
+/* 'Raleway' */
+
+body {
+	font-family: 'Montserrat', sans-serif ;
+	color: white;
+}
+/*Montserrat 우선 되는 폰트. 얘가 없으면 , 뒤에 있는 *sans-serif 폰트를 쓰겠다 라는 뜻/*/
+
+section {
+	height: 100vh;
+	background: red;
+	position: relative;
+	overflow: hidden;
+}
+
+/*!*100vh 란 화면을 꽉채우겠다. 너의 뷰를 꽉 채우겠다* 풀박스/*/
+/*!**! overflow: hidden; 얘는 자동으로 넘어가지않게 설정해주는거래*/
+
+.vide {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/*background: orange;*/
+	/*left: 50px;*/
+	/*top: 50px;*/
+	overflow: hidden;
+	left: 0;
+	top: 0;
+}
+
+.vide video {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: auto;
+	height: auto;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+
+.over {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/*background: blue;*/
+	left: 0;
+	top: 0;
+	background: linear-gradient(130deg, white, transparent);
+}
+/*transparent 얘는 투명도 말하는거래. 하 진짜 너무 빠르다 2배속으로 듣는거같음*/
+
+.contents {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/*background: green;*/
+	left: 0;
+	top: 0;
+	/*background: transparent;*/
+}
+
+.contents .logo {
+	/*background: blue;*/
+	position: absolute;
+	left: 100px;
+	top: 50px;
+}
+
+.contents .logo img {
+	width: 80px;
+}
+
+.contents .titlegroup {
+	width: 600px;
+	/*height: 500px;*/
+	/*글 썼으니까 높이 지워. 글 만큼만 나오게*/
+	/*background: blue;*/
+	position: absolute;
+	left: 100px;
+	bottom: 100px;
+}
+
+.contents .titlegroup h2 {
+	font-size: 60px;
+	font-weight: 700;
+}
+
+.contents .titlegroup h2 span {
+	color: #3a78e3;
+}
+
+
+.contents .titlegroup p {
+	font-size: 18px;
+	line-height: 1.4;
+	margin-top: 30px;
+}
+/*line-height:  이거 행간 조절*/
+
+.contents .titlegroup .wrap {
+	margin-top: 20px;
+}
+
+
+.contents .titlegroup .wrap button {
+	background: white;
+	color:black;
+	border: 2px solid white;
+	/*padding-top: 7px;*/
+	/*padding-bottom: 7px;*/
+	/*padding-right: 7px;*/
+	/*padding-left: 7px;*/
+	padding: 7px;
+	border-radius: 20px;
+	text-transform: uppercase;
+	width: 150px;
+	font-size: 14px;
+}
+
+.contents .titlegroup .wrap .book {
+	background: transparent;
+	color: white;
+	margin-right: 5px;
+}
+
+
+
+.menu {
+	width: 40px;
+	height: 20px;
+	position: absolute;
+	right: 100px;
+	top: 50px;
+	cursor: pointer;
+	z-index: 9999;
+}
+
+.menu div {
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background: white;
+	transition: 0.5s;
+}
+.menu div:nth-child(1) {top: 0;}
+.menu div:nth-child(2),
+.menu div:nth-child(3) {top: 50%;}
+.menu div:nth-child(4) {top: 100%;}
+
+.menu.active div:nth-child(1),
+.menu.active div:nth-child(4) {
+	opacity: 0;
+}
+
+.menu.active div:nth-child(2) {
+	transform: rotate(-45deg);
+}
+
+.menu.active div:nth-child(3) {
+	transform: rotate(45deg);
+}
+
+
+
+/*.menu {*/
+/*	width: 100px;*/
+/*	height: 100px;*/
+/*	!*background: blue;*!*/
+/*	position: absolute;*/
+/*	right: 100px;*/
+/*	top: 50px;*/
+/*}*/
+
+/*.menu div {*/
+/*	position: absolute;*/
+/*	height: 3px;*/
+/*	width: 100%;*/
+/*	background: white;*/
+/*}*/
+/*.menu div:nth-child(1) {*/
+/*	top: 0;*/
+/*}*/
+/*.menu div:nth-child(2),*/
+/*.menu div:nth-child(3) {*/
+/*	top: 50%;*/
+/*}*/
+/*.menu div:nth-child(4) {*/
+/*	top: 100%;*/
+/*}*/
+
+/*이게 클래스 안 만들고도 구분할 수 있는 방법이래*/
+
+
+.contents .anni {
+	/*width: 200px;*/
+	height: 100px;
+	/*background: blue;*/
+	position: absolute;
+	right: 100px;
+	bottom: 100px;
+	text-align: center;
+}
+
+.contents .anni div {
+	font-size: 30px;
+}
+
+.contents .anni i {
+	font-size: 120px;
+	font-family: 'Monoton', sans-serif;
+	display: block;
+	margin-top: 10px;
+}
+
+/*i태그는 인라인요소라서 top 못 써*/
+/*쓸수있는 방법 있음 블럭모드로 바꾸면 됨*/
+/*display: block;*/
+/*margin-top: 10px;*/
+/*이렇게 쓰면 블럭모드로 바뀌고 탑 사용 가능 */
+
+
+
+.modal {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.55);
+}
+
+.modal.active {
+	display: block;
+}
+
+
+.modal ul {
+	position: absolute;
+	top :50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*transform: translate(-50%, -50%); 우와쩐다 이게 뭐냐면*/
+/*마진 -(크기의 반값) 이때 사용하는건데*/
+/*반값을 모를때 사용하는거래*/
+/*내 크기에서 -50%를 빼겠다. 라는 뜻 */
+
+.modal ul li {
+	padding: 10px;
+	
+	
+	/*animation-name: move;*/
+	
+	/*animation-duration: 0.8s;*/
+	
+	/*animation-timing-function: linear;*/
+	
+	/*animation-iteration-count: 1;*/
+	
+	/*animation-fill-mode: both;*/
+	
+	animation: move 0.8s linear 1 both;
+}
+.modal ul li a {
+	color: white;
+	font-size: 36px;
+	font-family: 'Raleway', sans-serif;
+	text-decoration: none;
+}
+
+.modal ul li:nth-child(1) {animation-delay: 0s;}
+.modal ul li:nth-child(2) {animation-delay: 0.2s;}
+.modal ul li:nth-child(3) {animation-delay: 0.4s;}
+.modal ul li:nth-child(4) {animation-delay: 0.6s;}
+.modal ul li:nth-child(5) {animation-delay: 0.8s;}
+
+@keyframes move {
+	0% {
+		transform: translateX(-100px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

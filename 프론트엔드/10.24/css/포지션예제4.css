@@ -1,0 +1,191 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/*.orange {*/
+/*	height: 1000px;*/
+/*	background: orange;*/
+/*}*/
+
+/*.blue {*/
+/*	background: blue;*/
+/*	height: 1000px;*/
+/*	position: relative;*/
+/*}*/
+
+/*.blue .red {*/
+/*	background: red;*/
+/*	height: 300px;*/
+/*	width: 300px;*/
+/*	position: absolute;*/
+/*	left: 50%;*/
+/*	top: 0;*/
+/*	margin-left: -150px;*/
+/*	margin-top: -150px;*/
+/*}*/
+
+/*.blue .red .box1 {*/
+/*	background: black;*/
+/*	height: 100px;*/
+/*	width: 100px;*/
+/*	position: absolute;*/
+/*	right: 0;*/
+/*	bottom: 0;*/
+/*}*/
+
+/*.blue .purple {*/
+/*	background: purple;*/
+/*	height: 300px;*/
+/*	width: 450px;*/
+/*	position: absolute;*/
+/*	top: 50%;*/
+/*	left: 50%;*/
+/*	margin-top: -150px;*/
+/*	margin-left: -225px;*/
+/*}*/
+
+/*.blue .purple .box2 {*/
+/*	background: black;*/
+/*	height: 100px;*/
+/*	width: 100px;*/
+/*	position: absolute;*/
+/*	top: 0;*/
+/*	right: 0;*/
+/*}*/
+
+/*.blue .purple .box3 {*/
+/*	background: black;*/
+/*	height: 100px;*/
+/*	width: 100px;*/
+/*	position: absolute;*/
+/*	bottom: 0;*/
+/*	left: 0;*/
+/*}*/
+
+/*.blue .pink {*/
+/*	background: deeppink;*/
+/*	height: 550px;*/
+/*	width: 440px;*/
+/*	position: absolute;*/
+/*	left: 50%;*/
+/*	bottom: 0%;*/
+/*	margin-bottom: -275px;*/
+/*	margin-left: -220px;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+/*body {*/
+/*	position: relative;*/
+/*}*/
+
+
+.orange {
+	height: 1000px;
+	background: orange;
+}
+
+.blue {
+	height: 1000px;
+	background: blue;
+	position: relative;
+}
+
+
+.blue .red {
+	background: red;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	left: 50%;
+	margin-left: -150px;
+	top: 0;
+	margin-top: -150px;
+}
+
+.blue .red .box1 {
+	background: black;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.blue .purple {
+	background: purple;
+	height: 300px;
+	width: 450px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-top: -150px;
+	margin-left: -225px;
+}
+
+.blue .purple .box2 {
+	background: black;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top:0;
+	right: 0;
+}
+
+
+.blue .purple .box3 {
+	background: black;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	bottom:0;
+	left: 0;
+}
+
+.blue .pink {
+	background: deeppink;
+	width: 550px;
+	height: 440px;
+	position: absolute;
+	left: 50%;
+	bottom: 0%;
+	margin-left: -275px;
+	margin-bottom: -220px;
+}
+
+.blue .pink .box4 {
+	background: black;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+
+
+
+
+
+
+
+
+
+
+/*.or {*/
+/*	height: 1000px;*/
+/*	background: orange;*/
+/*}*/

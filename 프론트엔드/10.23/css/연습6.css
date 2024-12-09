@@ -1,0 +1,33 @@
+
+/** {*/
+/*	margin: 0;*/
+/*	padding: 0;*/
+/*}*/
+
+.container {
+	background: lime;
+	width: 900px;
+	display: flex;
+	margin-left: 20px;
+	margin-top: 30px;
+	/*height: 700px;*/
+	justify-content: space-between;
+}
+
+/*필기)비트윈은 박스 두개를 각 각 양끝으로 보내고 싶어요! 라서*/
+/*밑에 박스들한테 마진을 안 주고, justify-content: space-between; 이렇게 써서*/
+/*정렬을 정리할 수도 있음*/
+
+.left {
+	background: dodgerblue;
+	width: 300px;
+	height: 700px;
+	/*margin-right: 10px;*/
+}
+
+.contens {
+	background: orange;
+	width: 590px;
+	height: 700px;
+	/*margin-left: 10px;*/
+}

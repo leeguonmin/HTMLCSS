@@ -1,0 +1,111 @@
+
+#root {}
+
+header {
+	height: 200px;
+	background: navy;
+	display: flex;
+}
+
+header .logo {
+	border: 2px solid black;
+}
+
+header .gub {
+	margin-left: 100px;
+	border: 2px solid black;
+	/*font-size: 0;*/
+	display: flex;
+	/*gap: 10px;*/
+}
+
+header .gub a {
+	display: block;
+}
+
+header .gub a img {
+	display: block;
+}
+
+.visual {
+	background: aqua;
+	height: 400px;
+	margin-top: 50px;
+	position: relative;
+}
+
+.visual .group {
+	width: 1000px;
+	display: flex;
+	
+	position: absolute;
+	left: 50%;
+	bottom: 30px;
+	bottom: 30px;
+	/*margin-left: -500px;*/
+	transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.visual .group div {
+	width: 25%;
+	height: 100px;
+	background: cornflowerblue;
+}
+
+.visual .group .box1 {
+	background: orangered;
+}
+
+
+.wrap {
+	width: 1000px;
+	height: 470px;
+	/*background: red;*/
+	margin: 40px auto 50px;
+}
+
+.head {
+	height: 100px;
+	background: dodgerblue;
+}
+.wrapbodt {
+	height: 400px;
+	background: gold;
+	margin: 50px 0 20px;
+}
+.wrapbodt .go {
+	width: 950px;
+	height: 350px;
+	/*background: green;*/
+	margin:  0 auto;
+	position: relative;
+	z-index: 10;
+	display: flex;
+
+.wrapbodt .go div {
+	width: 310px;
+	height: 350px;
+	background: purple;
+}
+.wrapbodt .back {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 200px;
+	width: 100%;
+}
+}
+
+
+
+
+.wrapfoot {
+	height: 100px;
+	background: purple;
+}
+
+footer {
+	height: 150px;
+	background: black;
+}

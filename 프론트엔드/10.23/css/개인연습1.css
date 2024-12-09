@@ -1,0 +1,150 @@
+
+.container {
+	background: lime;
+	width: 900px;
+	display: flex;
+	/*justify-content: space-between;*/
+	margin-bottom: 50px;
+}
+
+.left {
+	background: blue;
+	width: 300px;
+	height: 700px;
+	margin-right: 10px;
+}
+
+.contents {
+	background: orange;
+	height: 700px;
+	width: 590px;
+}
+/*				예제1*/
+
+
+.con {
+	background: deeppink;
+	width: 900px;
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.con div{
+	height: 280px;
+	width: 300px;
+}
+
+.con .le {
+	background: lime;
+}
+
+.con .center {
+	background: purple;
+	width: 280px;
+	margin: 0 10px;
+}
+
+.con .right {
+	background: orange;
+}
+
+/*					예제2*/
+
+
+
+
+
+.flo {
+	background: gray;
+	width: 800px;
+	display: flex;
+}
+
+.flo div {
+	width: 200px;
+	height: 200px;
+}
+
+.flo .fool01 {
+	background: #92c32a;
+}
+
+.flo .fool02 {
+	background: #e63b67;
+}
+
+.flo .fool03 {
+	background: #1c8fd1;
+}
+
+.flo .fool04 {
+	background: #ff7612;
+}
+
+
+/*					예제3*/
+
+
+
+
+.he {
+	background: orange;
+	width: 1000px;
+	height: 100px;
+	margin-bottom: 20px;
+	margin-top: 50px;
+}
+
+.coo {
+	height: 700px;
+	display: flex;
+}
+
+.coo .subb {
+	background: blue;
+	width: 200px;
+	margin-right: 10px;
+}
+
+.coo .cont {
+	background: lime;
+	width: 790px;
+}
+
+.ls {
+	height: 130px;
+	display: flex;
+	margin-top: 30px;
+}
+
+.ls div {
+	background: hotpink;
+}
+
+.ls .boo1 {
+	width: 330px;
+	/*background: hotpink;*/
+}
+
+.ls .boo2 {
+	width: 330px;
+	margin: 0 5px;
+	/*background: hotpink;*/
+}
+
+.ls .boo3 {
+	width: 330px;
+	/*background: hotpink;*/
+}
+
+.foo {
+	background: black;
+	height: 50px;
+	width: 1000px;
+	margin-top: 20px;
+}
+
+
+
+
+
