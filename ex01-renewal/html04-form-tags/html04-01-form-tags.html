@@ -3,6 +3,72 @@
 
 <head>
     <title>가입 폼 실습</title>
+
+    <!--
+     username : 길이가 3자~8자
+    email : 길이 20자 이상
+    password : 길이 4~10자
+    confirm_password : password 랑 값이 같아야 
+    favorite : 최소 1개 선택
+    -->
+   
+
+    <script>
+        function validateForm() {
+            // < form 확인 >
+            const form = document.forms["registerForm"];  
+            // const form = document.registerForm;     // 이렇게 하는 방법도 있음
+
+            const username = form.username;       // username 값을 가져와 
+            const email = form.email;
+            const password = form.password;
+            const confirm_password = form.confirm_password;
+            const favorites = form.favorite;
+
+            // 통과 기준을 먼저 ()에 적고 
+            // (!()) 뒤집어줘! -> 통과하지 못했다는 if를 적는거니까 
+            if (!(username.value.length >= 3 && username.value.length <= 8)) {
+                alert("사용자 이름은 3글자 이상 8자 이하입니다");
+                username.focus();
+                return false;
+            }
+
+            if(email.value.length <20) {
+                alert("이메일는 20자 이상입니다.");
+                email.focus();
+                return false;
+            }
+
+            if(!(password.value.length >= 4 && password.value.length <= 10)) {
+                alert("비밀번호는 4자 이상 10자 이하입니다");
+                password.focus();
+                return false;
+            }
+
+            if(password.value !== confirm_password.value) {
+                alert("비밀 번호를 확인해주세요");
+                confirm_password.focus();
+                return false;
+            }
+
+            let favoriteSelected = false;
+            for(let i =0; i<favorites.length; i++) {
+                if(favorites[i].checked) {
+                    favoriteSelected = true;
+                    break;
+                }
+            }
+            if (!favoriteSelected) {
+                alert("선호음료를 최소 1개 선택해 주세요");
+                return false;
+            }
+
+            // 여기까지 하면 모든 검증 통과니까
+            return true;
+
+        }
+    </script>
+
 </head>
 
 <body>
@@ -15,7 +81,9 @@
     action : 데이터를 전송 받아 처리할 서버의 페이지 (default : 현재 페이지) -->
 <form name = "registerForm" 
     action="#"
-    method="post">
+    method="post"
+    
+    onsubmit="return validateForm()">  
 
     <fieldset>
         <legend>회원 정보</legend>
@@ -24,23 +92,34 @@
         <input type="text"
             id="username"
             name="username"
+            placeholder="사용자 이름을 입력하세요"/>
+        <!-- <input type="text"
+            id="username"
+            name="username"
             placeholder="사용자 이름을 입력하세요"      
-            required />
+            required />    -->
 
         <label for="email">이메일</label>
         <input type="text"
             id="email"
             name="email"
+            placeholder="이메일을 입력하세요"/><br />
+        <!-- <input type="text"
+            id="email"
+            name="email"
             placeholder="이메일을 입력하세요"
-            required /><br />
+            required /><br /> -->
 
         <label for="password">비밀 번호</label>
-        <input type="password" id="password" name="password" required /><br />
+        <!-- <input type="password" id="password" name="password" required /><br /> -->
+        <input type="password" id="password" name="password"/><br />
         <label>비밀번호 확인
             <input type="password"
-                    name ="confirm_password" 
-                    required />
+                    name ="confirm_password" />
         </label><br />
+            <!-- <input type="password"
+                name ="confirm_password" 
+                required /> -->
 
 
         <label>성별</label>
